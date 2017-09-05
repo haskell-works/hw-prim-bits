@@ -1,6 +1,9 @@
 module Main where
 
-import Lib
+import Data.Monoid ((<>))
+import HaskellWorks.Prim.Bits
 
 main :: IO ()
-main = someFunc
+main = do
+  let result = pdep64 9 9
+  putStrLn $ "Result: " <> show result

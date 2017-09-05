@@ -16,6 +16,7 @@ benchPdep =
   [ env setup $ \bv -> bgroup "bits"
     [ bench "pdep64"    (whnf (pdep64 0) (0 :: Word64))
     , bench "popCount"  (whnf popCount   (0 :: Word64))
+    , bench "sin"       (whnf sin        (0 :: Double))
     ]
   ]
 

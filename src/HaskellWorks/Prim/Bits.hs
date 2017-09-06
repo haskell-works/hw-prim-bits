@@ -1,5 +1,17 @@
-module HaskellWorks.Prim.Bits where
+module HaskellWorks.Prim.Bits
+  ( module X
+  ) where
 
 import Data.Word
+import HaskellWorks.Prim.Bits.Fast as X
 
-foreign import ccall unsafe "bits.h" pdep64 :: Word64 -> Word64 -> Word64
+class Pdep a where
+  pdep :: a -> a -> a
+
+instance Pdep Word64 where
+  pdep = pdep64
+  {-# INLINE pdep #-}
+
+instance Pdep Word32 where
+  pdep = pdep32
+  {-# INLINE pdep #-}

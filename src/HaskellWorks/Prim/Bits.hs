@@ -1,5 +1,7 @@
 module HaskellWorks.Prim.Bits
-  ( module X
+  ( Pdep(..)
+  , Pext(..)
+  , module X
   ) where
 
 import Data.Word

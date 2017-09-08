@@ -22,3 +22,11 @@ spec = describe "HaskellWorks.Prim.BitsSpec" $ do
     a <- forAll $ G.word32 R.constantBounded
     b <- forAll $ G.word32 R.constantBounded
     S.pdep32 a b === F.pdep32 a b
+  it "pext64 behaves the same" $ require $ property $ do
+    a <- forAll $ G.word64 R.constantBounded
+    b <- forAll $ G.word64 R.constantBounded
+    S.pext64 a b === F.pext64 a b
+  it "pext32 behaves the same" $ require $ property $ do
+    a <- forAll $ G.word32 R.constantBounded
+    b <- forAll $ G.word32 R.constantBounded
+    S.pext32 a b === F.pext32 a b

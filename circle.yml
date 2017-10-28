@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/hw-prim-bits
     docker:
-      - image: fpco/stack-build:latest
+      - image: quay.io/haskell_works/stack-build-minimal
 
     steps:
       - checkout

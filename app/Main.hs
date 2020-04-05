@@ -1,6 +1,5 @@
 module Main where
 
-import Data.Monoid ((<>))
 import HaskellWorks.Prim.Bits
 
 main :: IO ()

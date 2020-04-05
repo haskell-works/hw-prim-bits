@@ -1,7 +1,6 @@
 module Main where
 
 import Criterion.Main
-import Data.Monoid            ((<>))
 import Data.Word
 import HaskellWorks.Prim.Bits
 

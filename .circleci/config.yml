@@ -59,10 +59,10 @@ workflows:
             branches:
               only: master
 
-      - hackage/upload:
-          context: haskell-ci
-          publish: true
-          requires:
-            - GitHub Release
-          username: ${HACKAGE_USER}
-          password: ${HACKAGE_PASS}
+      # - hackage/upload:
+      #     context: haskell-ci
+      #     publish: true
+      #     requires:
+      #       - GitHub Release
+      #     username: ${HACKAGE_USER}
+      #     password: ${HACKAGE_PASS}

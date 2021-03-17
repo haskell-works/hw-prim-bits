@@ -22,7 +22,7 @@ source-repository head
 common base                 { build-depends: base                 >= 4          && < 5      }
 
 common criterion            { build-depends: criterion                                      }
-common doctest              { build-depends: doctest              >= 0.16.2     && < 0.17   }
+common doctest              { build-depends: doctest              >= 0.16.2     && < 0.19   }
 common doctest-discover     { build-depends: doctest-discover     >= 0.2        && < 0.3    }
 common hedgehog             { build-depends: hedgehog                                       }
 common hspec                { build-depends: hspec                                          }

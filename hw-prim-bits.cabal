@@ -1,7 +1,7 @@
 cabal-version: 2.4
 
 name:                   hw-prim-bits
-version:                0.1.0.4
+version:                0.1.0.5
 synopsis:               Primitive support for bit manipulation
 description:            Primitive support for bit manipulation. Please see README.md
 homepage:               https://github.com/githubuser/hw-prim-bits#readme
